@@ -4,3 +4,4 @@ peraturan kelampok :
 - selalu commit kalau ada perubahan
 - koordinasi di grup ig
 - cermati tugas dari gamelab
+- plis kalian coba edit 
