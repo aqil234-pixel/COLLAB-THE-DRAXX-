@@ -4,7 +4,7 @@ import datetime
 import winsound  # WINDOWS ONLY
 
 KELOMPOK_SIZE = 4
-JAM_BEL = ["05:00", "17:00"]  # pagi & sore
+JAM_BEL = ["13:40", "13:43"]  # pagi & sore
 
 # =============================
 # LOAD DATA
