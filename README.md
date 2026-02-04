@@ -6,7 +6,3 @@ peraturan kelampok :
 * koordinasi di grup ig
 * cermati tugas dari gamelab
 * plis kalian coba edit
-* Kontribusi oleh Azmi pada branch development
-
-
-
