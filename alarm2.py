@@ -71,7 +71,7 @@ while True:
         time.sleep(60)
 
     # ================== BEL SORE ==================
-    elif jam == "18:30" and sudah_bunyi_sore == False:
+    elif jam == "14:34" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
 
