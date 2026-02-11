@@ -1,6 +1,4 @@
-#buat konfigure libary (suta)
-#buat konfigure fungsi kelompok(azmi)
-#konfigure fungsi cek piket akbar (aqil)
-#konfigure bel pagi + add sound  (suta)
-#konfigure bel sore (azmi)
-# pengecekan (aqil)
+import time
+import datetime
+import os
+from playsound import playsound
