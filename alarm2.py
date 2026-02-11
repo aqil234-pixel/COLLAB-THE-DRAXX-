@@ -71,7 +71,7 @@ while True:
         sudah_bunyi_pagi = True
         time.sleep(60)
 
-    # ================== BEL SORE ================== (AZMI)
+    # ================== BEL SORE ==================
     elif jam == "18:30" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
@@ -79,6 +79,9 @@ while True:
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_sore.mp3"))
         playsound(os.path.join(BASE_DIR, "kelompok_piket_sore", f"kelompok_piket_sore{kelompok}.mp3"))
 
+        if cek_piket_akbar() == True:
+            print("HARI INI PIKET AKBAR")
+            playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
 
         sudah_bunyi_sore = True
         time.sleep(60)
