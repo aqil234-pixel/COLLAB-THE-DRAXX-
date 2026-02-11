@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 peraturan kelampok :
 
 * mengerjakan tugas sesuai job
@@ -11,4 +11,4 @@ peraturan kelampok :
 * BRANCH DEVELOPMENT KHUSUS CODING ( PROGRAM BEL OTOMATIS )
 =======
 di branch ini berisi coding dan jangan diisi file selain yang di butuhkan untuk coding
->>>>>>> aqilroom
+
