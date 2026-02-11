@@ -2,9 +2,10 @@ import time
 import datetime
 import os
 from playsound import playsound
+#========== LIBARY ADD ====== (SUTA)
 
 
-# ================== FUNGSI KELOMPOK HARIAN ==================
+# ================== FUNGSI KELOMPOK HARIAN ================== (AZMI)
 def tentukan_kelompok(hari):
     if hari == 0:
         return 1
@@ -22,7 +23,7 @@ def tentukan_kelompok(hari):
         return 3
 
 
-# ================== CEK APAKAH PIKET AKBAR ==================
+# ================== CEK APAKAH PIKET AKBAR ================== (AQIL)
 def cek_piket_akbar():
     tanggal_mulai = datetime.date(2025, 1, 6)  # bebas, patokan awal
     hari_ini = datetime.date.today()
@@ -55,15 +56,15 @@ while True:
 
     kelompok = tentukan_kelompok(hari)
 
-    # ================== BEL PAGI ==================
-    if jam == "11:04" and sudah_bunyi_pagi == False:
+    # ================== BEL PAGI ================== (SUTA)
+    if jam == "06:10" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_pagi.mp3"))
         playsound(os.path.join(BASE_DIR, "kelompok_piket_pagi", f"kelompok_piket_pagi{kelompok}.mp3"))
 
-        if cek_piket_akbar() == True:
+        if cek_piket_akbar() == True: # jika pekan kedua atau ke empat hari minggu untuk bersih akbar
             print("HARI INI PIKET AKBAR")
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
 
