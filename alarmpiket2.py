@@ -52,7 +52,7 @@ while True:
 
     kelompok = tentukan_kelompok(hari)
 #AQIL
- if jam == "06:10" and sudah_bunyi_pagi == False:
+    if jam == "06:10" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
