@@ -82,4 +82,4 @@ while True:
         time.sleep(60)
 
     time.sleep(1)
-# (Azmi)
+# (Azmi r)
