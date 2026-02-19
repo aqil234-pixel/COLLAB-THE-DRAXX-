@@ -53,32 +53,36 @@ while True:
 
     kelompok = tentukan_kelompok(hari)
 #AQIL
-    if jam == "14:30" and sudah_bunyi_pagi == False:
+    if jam == "14:33" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_pagi.mp3"))
-        playsound(os.path.join(BASE_DIR, "kelompok_piket_pagi", f"kelompok_piket_pagi {kelompok}.mp3"))
+        playsound(os.path.join(BASE_DIR, "kelompok_piket_pagi", f"kelompok_piket_pagi_{kelompok}.mp3"))
+        print("DEBUG PATH:", path_file)
+        playsound(path_file)
 
         if cek_piket_akbar() == True: # jika pekan kedua atau ke empat hari minggu untuk bersih akbar
             print("HARI INI PIKET AKBAR")
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
-
+            
         sudah_bunyi_pagi = True
         time.sleep(60)
 #sutaa
     # ================== BEL SORE ==================
-    elif jam == "14:31" and sudah_bunyi_sore == False:
+    elif jam == "14:34" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
 
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_sore.mp3"))
-        playsound(os.path.join(BASE_DIR, "kelompok_piket_sore", f"kelompok_piket_sore {kelompok}.mp3"))
+        playsound(os.path.join(BASE_DIR, "kelompok_piket_sore", f"kelompok_piket_sore_{kelompok}.mp3"))
+        print("DEBUG PATH:", path_file)
+        playsound(path_file)
 
         if cek_piket_akbar() == True:
             print("HARI INI PIKET AKBAR")
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
-
+            
         sudah_bunyi_sore = True
         time.sleep(60)
 
