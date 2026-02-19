@@ -81,7 +81,7 @@ while True:
 
         sudah_bunyi_sore = True
         time.sleep(60)
-    
+#==========ALARM SAHUR=========
     elif jam == "02:00" and sudah_bunyi_sahur == False:
         print("BEL SAHUR")
 
