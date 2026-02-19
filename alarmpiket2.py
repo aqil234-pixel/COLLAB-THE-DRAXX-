@@ -37,6 +37,7 @@ print("=== SISTEM BEL PIKET AKTIF ===")
 
 sudah_bunyi_pagi = False
 sudah_bunyi_sore = False
+sudah_bunyi_sahur = False
 tanggal_terakhir = ""
 
 while True:
@@ -79,6 +80,14 @@ while True:
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
 
         sudah_bunyi_sore = True
+        time.sleep(60)
+    
+    elif jam == "02:00" and sudah_bunyi_sahur == False:
+        print("BEL SAHUR")
+
+        playsound(os.path.join(BASE_DIR, ))
+
+        sudah_bunyi_sahur = True
         time.sleep(60)
 
     time.sleep(1)
