@@ -85,7 +85,7 @@ while True:
     elif jam == "02:00" and sudah_bunyi_sahur == False:
         print("BEL SAHUR")
 
-        playsound(os.path.join(BASE_DIR, ))
+        playsound(os.path.join(BASE_DIR,"musik", "alarm_sahur_gufron.mp3" ))
 
         sudah_bunyi_sahur = True
         time.sleep(60)
