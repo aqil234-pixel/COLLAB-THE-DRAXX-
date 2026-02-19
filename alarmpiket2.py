@@ -82,7 +82,7 @@ while True:
         sudah_bunyi_sore = True
         time.sleep(60)
     
-    elif jam == "09:10" and sudah_bunyi_sahur == False:
+    elif jam == "02:00" and sudah_bunyi_sahur == False:
         print("BEL SAHUR")
 
     for i in range(3):
