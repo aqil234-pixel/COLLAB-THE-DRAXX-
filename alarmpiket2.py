@@ -54,7 +54,7 @@ while True:
 
     kelompok = tentukan_kelompok(hari)
 #AQIL
-    if jam == "10:46" and sudah_bunyi_pagi == False:
+    if jam == "06:00" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
@@ -70,7 +70,7 @@ while True:
         time.sleep(60)
 #sutaa
     # ================== BEL SORE ==================
-    elif jam == "10:48" and sudah_bunyi_sore == False:
+    elif jam == "18:25" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
 
