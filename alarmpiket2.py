@@ -49,6 +49,7 @@ while True:
     if tanggal != tanggal_terakhir:
         sudah_bunyi_pagi = False
         sudah_bunyi_sore = False
+        sudah_bunyi_sahur = False
         tanggal_terakhir = tanggal
 
     kelompok = tentukan_kelompok(hari)
@@ -90,10 +91,10 @@ while True:
     elif jam == "02:00" and sudah_bunyi_sahur == False:
         print("BEL SAHUR")
 
-    for i in range(3):
-        print(f"Alarm sahur ke-{i+1}")
-        playsound(os.path.join(BASE_DIR, "musik", "alarm_sahur_gufron.mp3"))
-        
+        for i in range(3):
+         print(f"Alarm sahur ke-{i+1}")
+         playsound(os.path.join(BASE_DIR, "musik", "alarm_sahur_gufron.mp3"))
+        time.sleep(2)
 
     sudah_bunyi_sahur = True
     time.sleep(60)
