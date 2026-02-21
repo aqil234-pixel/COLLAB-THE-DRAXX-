@@ -49,6 +49,7 @@ while True:
     if tanggal != tanggal_terakhir:
         sudah_bunyi_pagi = False
         sudah_bunyi_sore = False
+        sudah_bunyi_sahur = False
         tanggal_terakhir = tanggal
 
     kelompok = tentukan_kelompok(hari)
