@@ -3,6 +3,7 @@ import datetime
 import os
 from playsound import playsound
 # (suta)
+
 def tentukan_kelompok(hari):
     if hari == 0:
         return 1
@@ -54,7 +55,7 @@ while True:
 
     kelompok = tentukan_kelompok(hari)
 #AQIL
-    if jam == "06:00" and sudah_bunyi_pagi == False:
+    if jam == "10:46" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
@@ -69,8 +70,9 @@ while True:
         sudah_bunyi_pagi = True
         time.sleep(60)
 #sutaa
+
     # ================== BEL SORE ==================
-    elif jam == "18:25" and sudah_bunyi_sore == False:
+    elif jam == "10:48" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
 
@@ -84,9 +86,10 @@ while True:
             
         sudah_bunyi_sore = True
         time.sleep(60)
+#aqil
 
 #==========ALARM SAHUR=========
-    elif jam == "02:00" and sudah_bunyi_sahur == False:
+    if jam == "02:00" and sudah_bunyi_sahur == False:
         print("BEL SAHUR")
 
         for i in range(3):
