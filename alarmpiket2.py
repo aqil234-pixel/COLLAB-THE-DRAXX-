@@ -55,24 +55,23 @@ while True:
 
     kelompok = tentukan_kelompok(hari)
 #AQIL
-    if jam == "10:46" and sudah_bunyi_pagi == False:
+    if jam == "14:24" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_pagi.mp3"))
         playsound(os.path.join(BASE_DIR, "kelompok_piket_pagi", f"kelompok_piket_pagi_{kelompok}.mp3"))
-        
 
         if cek_piket_akbar() == True: # jika pekan kedua atau ke empat hari minggu untuk bersih akbar
             print("HARI INI PIKET AKBAR")
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
             
         sudah_bunyi_pagi = True
-        time.sleep(60)
+        
 #sutaa
 
     # ================== BEL SORE ==================
-    elif jam == "10:48" and sudah_bunyi_sore == False:
+    if jam == "14:31" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
 
@@ -85,7 +84,7 @@ while True:
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
             
         sudah_bunyi_sore = True
-        time.sleep(60)
+       
 #aqil
 
 #==========ALARM SAHUR=========
@@ -98,7 +97,7 @@ while True:
         time.sleep(2)
 
     sudah_bunyi_sahur = True
-    time.sleep(60)
+   
 
     time.sleep(1)
 # (Azmi)
