@@ -1,14 +1,19 @@
-"Jalani hidupmu dengan integritas, jangan pernah mengkhianati dirimu sendiri."
+<h1 align="center">Hi 👋, THIS KELOMPOK THE DRAXXX</h1>
+<h3 align="center">TKJ Student | DevOps Learner | Automation Enthusiast</h3>
 
-peraturan kelampok :
+<h4 align="center">🚀 ABOUT THE-DRAXXX TEAM | ROLE FOR MEMBER</h4>
 
-* mengerjakan tugas sesuai job
-* harus hadir
-* selalu commit kalau ada perubahan
-* koordinasi di grup ig
-* cermati tugas dari gamelab
-* plis kalian coba edit
-* BRACH MAIN KHUSUS DOKUMEN PROJEK (PDF, RULES, MEMBER)
-* BRANCH DEVELOPMENT KHUSUS CODING ( PROGRAM BEL OTOMATIS )
-di branch ini berisi coding dan jangan diisi file selain yang di butuhkan untuk coding
+- 🎓 M.Fajrul Suta Galang    : Observatoris | Reportert
+- 🔧 Ahmad Aqil Taqtiyyuddin : Github Admin | progremers
+- 🌐 M.Azmi Robbanni         : Dokumentasi  | Flowchart
+- ⚡ Future goal: Make Dicipline Student
 
+  <p>
+<img src="https://skillicons.dev/icons?i=python,git,github,vscode" />
+</p>
+
+  <p align="center">
+<img src="https://readme-typing-svg.herokuapp.com/?lines=DevOps+Learner;Python+Automation;+Enthusiast;Future+DevOps+Engineer&center=true&width=500&height=50">
+</p>
+
+<h5 align="center">WHAT WE DO IN HERE </h5>
