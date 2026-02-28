@@ -102,7 +102,7 @@ python3 --version
 1. Buka terminal/command prompt
 2. Masuk ke folder src
 ```bash
-cd sistem-pelayanan-uks/src
+cd sistem-alarm-piket/src
 ```
 
 3. Jalankan programnya
