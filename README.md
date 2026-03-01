@@ -109,4 +109,21 @@ cd sistem-pelayanan-uks/src
 ```bash
 alarmpiket2.py
 ```
-      
+<H3 align="center">LAPORAN PEKANAN </H3>
+
+<h1 align="center">PEKAN PERTAMA !</h1>
+<img src="picture/narasumber 1.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+<img src="picture/narasumber 2.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+<img src="picture/nara sumber 3.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+
+<H3 align="center">DISCUSE </H3>
+<img src="picture/discuse 1.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+<img src="picture/discuse 2.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+
+<H3 align="center">LAPORAN PEKANAN </H3>
+
+<h1 align="center">PEKAN KEDUA !</h1>
+
+<img src="picture/use case.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+<img src="picture/component diagram.jpg" width="550" style="aspect-ratio:/1; object-fit:cover; margin:10px;" />
+
