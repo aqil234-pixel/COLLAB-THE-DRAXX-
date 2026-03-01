@@ -2,10 +2,8 @@ import time
 import datetime
 import os
 from playsound import playsound
-#========== LIBARY ADD ====== (SUTA)
+# (suta)
 
-
-# ================== FUNGSI KELOMPOK HARIAN ================== (AZMI)
 def tentukan_kelompok(hari):
     if hari == 0:
         return 1
@@ -21,9 +19,8 @@ def tentukan_kelompok(hari):
         return 2
     else:
         return 3
+# (AZMI)
 
-
-# ================== CEK APAKAH PIKET AKBAR ================== (AQIL)
 def cek_piket_akbar():
     tanggal_mulai = datetime.date(2025, 1, 6)  # bebas, patokan awal
     hari_ini = datetime.date.today()
@@ -41,6 +38,7 @@ print("=== SISTEM BEL PIKET AKTIF ===")
 
 sudah_bunyi_pagi = False
 sudah_bunyi_sore = False
+sudah_bunyi_sahur = False
 tanggal_terakhir = ""
 
 while True:
@@ -52,38 +50,54 @@ while True:
     if tanggal != tanggal_terakhir:
         sudah_bunyi_pagi = False
         sudah_bunyi_sore = False
+        sudah_bunyi_sahur = False
         tanggal_terakhir = tanggal
 
     kelompok = tentukan_kelompok(hari)
-
-    # ================== BEL PAGI ================== (SUTA)
-    if jam == "06:10" and sudah_bunyi_pagi == False:
+#AQIL
+    if jam == "14:24" and sudah_bunyi_pagi == False:
         print("BEL PAGI BERBUNYI")
         print("Kelompok piket pagi: Kelompok", kelompok)
 
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_pagi.mp3"))
-        playsound(os.path.join(BASE_DIR, "kelompok_piket_pagi", f"kelompok_piket_pagi{kelompok}.mp3"))
+        playsound(os.path.join(BASE_DIR, "kelompok_piket_pagi", f"kelompok_piket_pagi_{kelompok}.mp3"))
 
         if cek_piket_akbar() == True: # jika pekan kedua atau ke empat hari minggu untuk bersih akbar
             print("HARI INI PIKET AKBAR")
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
-
+            
         sudah_bunyi_pagi = True
-        time.sleep(60)
+        
+#sutaa
 
     # ================== BEL SORE ==================
-    elif jam == "18:30" and sudah_bunyi_sore == False:
+    if jam == "14:31" and sudah_bunyi_sore == False:
         print("BEL SORE BERBUNYI")
         print("Kelompok piket sore: Kelompok", kelompok)
 
         playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_sore.mp3"))
-        playsound(os.path.join(BASE_DIR, "kelompok_piket_sore", f"kelompok_piket_sore{kelompok}.mp3"))
+        playsound(os.path.join(BASE_DIR, "kelompok_piket_sore", f"kelompok_piket_sore_{kelompok}.mp3"))
+       
 
         if cek_piket_akbar() == True:
             print("HARI INI PIKET AKBAR")
             playsound(os.path.join(BASE_DIR, "musik", "alarm_piket_akbar.mp3"))
-
+            
         sudah_bunyi_sore = True
-        time.sleep(60)
+       
+#aqil
+
+#==========ALARM SAHUR=========
+    if jam == "02:00" and sudah_bunyi_sahur == False:
+        print("BEL SAHUR")
+
+        for i in range(3):
+         print(f"Alarm sahur ke-{i+1}")
+         playsound(os.path.join(BASE_DIR, "musik", "alarm_sahur_gufron.mp3"))
+        time.sleep(2)
+
+    sudah_bunyi_sahur = True
+   
 
     time.sleep(1)
+# (Azmi)
